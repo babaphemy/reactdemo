@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Learnreact } from "./Learnreact";
+import { Contact } from "./Contact";
+import { Link } from "@reach/router";
 
 function App() {
   return (
@@ -10,6 +13,16 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>emmanuel's paragraph</p>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <Learnreact />
+        <Contact />
+
         <a
           className="App-link"
           href="https://reactjs.org"
